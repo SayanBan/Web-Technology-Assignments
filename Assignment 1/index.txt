@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Student Registration page</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="lname">Age:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <p>Please select your gender:</p>
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+
+  <label for="fname">Address</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="lname">Telephone</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <p>The select element is used to create a drop-down list.</p>
+
+ <label for="cars">Choose your stream:</label>
+  <select name="stream" id="stream">
+
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="Civil">Civil</option>
+    <option value="EE">EE</option>
+    <option value="ME">ME</option>
+
+  </select>
+  <br><br>
+
+  <p>Graduated?</p>
+
+  <input type="radio" id="yes" name="graduation" value="Yes">
+  <label for="yes">Yes</label><br>
+
+  <input type="radio" id="No" name="graduation" value="No">
+  <label for="No">No</label><br><br>
+
+  <label for="lname">CGPA</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="submit" value="Cancel">
+</form>
+
+</body>
+</html>
