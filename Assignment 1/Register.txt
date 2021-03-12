@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>Register</h2>
+
+<table>
+  <tr>
+    <th><b>Serial No.<b></th>
+    <th><b>Name<b></th>
+    <th><b>CGPA<b></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Sayan</td>
+    <td>9.9</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Avik</td>
+    <td>9.2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Shirsha</td>
+    <td>8.0</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Debdip</td>
+    <td>2.4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Debasree</td>
+    <td>10</td>
+  </tr>
+</table>
+
+</center>
+</body>
+</html>
