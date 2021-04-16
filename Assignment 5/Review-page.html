@@ -1,0 +1,178 @@
+<html>
+	<head>
+		<title>HTML and CSS</title>
+	</head>
+
+	<body style="background-color:seagreen;">
+
+	<div style="width: 800px; background-color:sandybrown; margin-top: 30px; margin-left: 400px; margin-right: 400px; padding-top: 10px;">
+	
+		<h1 style="background-color: red; color: white;  margin-left: 10px; margin-right: 10px; padding-left: 20px; line-height: 80px;">
+			Madcat
+			
+			<img src="cat-logo.png" style="float: right; width: 100px; height: 70px; padding-top: 5px; padding-right: 20px;">
+		</h1>
+
+		
+
+		<h1 style="background-color: red; color: white;margin-top: 40px; margin-left: 10px; margin-right: 10px; padding-left: 20px;">
+			Customer Rating
+			
+		</h1>
+
+		<label style="margin-left: 20px;">Customer Name:</label><br>
+		<input id="customer_name" type="text" id="name" style="margin-left: 20px;"><br><br>
+
+		<label style="margin-left: 20px;">Email ID:</label><br>
+		<input id="email" type="text" id="mail" style="margin-left: 20px;"><br><br>
+
+		<label style="margin-left: 20px;">Overall Rating:</label>
+		<input id="rating" type="radio" name="rating" style="margin-left: 20px;">
+		<input id="rating" type="radio" name="rating" style="margin-left: 20px;">
+		<input id="rating" type="radio" name="rating" style="margin-left: 20px;">
+		<input id="rating" type="radio" name="rating" style="margin-left: 20px;">
+		<input id="rating" type="radio" name="rating" style="margin-left: 20px;"><br><br>
+
+		<label style="margin-left: 20px;">Would you recommened this agency to your friend?</label><br>
+		<input id="recommened" type="radio" name="recommened" style="margin-left: 20px;"><label>Yes</label><br>
+		<input id="recommened" type="radio" name="recommened" style="margin-left: 20px;"><label>No</label><br><br>
+
+
+		<h1 style="background-color: red; color: white;margin-top: 40px; margin-left: 10px; margin-right: 10px; padding-left: 20px;">
+			We love hearing from you! Tell us what you think about this agency.
+		</h1>
+
+		<p style="margin-top: 20px; font-size: 20px; padding-left: 20px;">Leave a Review:</p>
+
+		<input id="review" type="textarea" style="margin-left: 20px;" placeholder="write something...">
+
+		<br><br><br>
+
+
+		<label style="margin-left: 20px;">Choose agency:</label>
+		<select id="agency">
+			<option id="1"></option>
+			<option id="2">Euro Travel</option>
+		</select>
+		<input id="sbt_btn" type="button" style="margin-left: 20px;" value="Submit" onclick="chkfunction()"><br><br><br>
+
+
+    <!--Start of Javascript-->
+
+		<script>
+
+			var agen=["","Euro Travel"];
+
+			for(var i=0;i<8;i++)
+			{
+				
+				document.getElementById((i+1)).innerHTML = agen[i];
+				
+			}
+			document.getElementById("sbt_btn").disabled = true;
+
+
+			var input = document.getElementById("review");
+			input.addEventListener("keyup", function(event)
+			{
+				if (event.keyCode === 13) 
+				{
+					event.preventDefault();
+					document.getElementById("sbt_btn").disabled = false;
+				}
+			});
+
+			// If someone leaves the field empty
+      function chkfunction()
+			{
+				var name=document.getElementById("customer_name").value;
+
+				if(name=="")
+				{
+					alert("Kindly enter customer name."); 
+					return;
+				}
+
+
+        //For the condition when email id field is left empty
+				var mail=document.getElementById("email").value;
+
+				if(mail=="")
+				{
+					alert("Email ID required"); 
+					return;
+				}
+
+				else
+				{
+          //if the user forgot to provide @ or .com
+					var f=0;
+					if(mail.search("@")==-1 || mail.search(".com")==-1)
+					{
+						alert("Invalid Email ID");
+						return;
+					}
+				}
+
+        //If rating is left unfilled
+				var rate=document.getElementsByName("rating");
+				var f=0;
+				for(var i=0;i<rate.length;i++) 
+				{
+                	if(rate[i].checked)
+                	{
+						f=1;
+						break;
+					}
+            	}
+				if(f==0)
+				{
+					alert("Please rate us")
+					return;
+				}
+
+        //If someone forgets to check any of the yes or no option
+				var reco=document.getElementsByName("recommended");
+				f=0;
+				for(var i=0;i<reco.length;i++) 
+				{
+                	if(reco[i].checked)
+                	{
+						f=1;
+						break;
+					}
+            	}
+				if(f==0)
+				{
+					alert("Please Choose either yes or no.")
+					return;
+				}
+
+				
+
+				var input = document.getElementById("review").value;
+				if(input=="")
+				{
+					alert("Review not written");
+					return;
+				}
+
+				var opt = document.getElementById("agency").value;
+				if(opt=="")
+				{
+					alert("Agency not chosen");
+					return;
+				}
+
+				alert("Review submitted successfully.")
+			}
+
+
+		</script>
+    <!--End of Javascript-->
+
+	</div>
+
+
+	</body>
+</html>

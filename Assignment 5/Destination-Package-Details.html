@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>HTML and CSS</title>
+	</head>
+
+	<body style="background-color:teal; align-content: center;">
+
+	<div style="width: 800px; background-color:burlywood; margin-top: auto; margin-left: auto; margin-right: auto; padding-top: auto;">
+	
+		<h1 style="background-color: red; color: white;  margin-left: 10px; margin-right: 10px; padding-left: 20px; line-height: 80px;">
+			Madcat
+			
+			<img src="cat-logo.png" style="float: right; width: 100px; height: 70px; padding-top: 5px; padding-right: 20px;">
+        </h1>
+        
+        <img src="florence.jpg" style="width: 200px; height: 100px; padding-top: 5px; margin-left: 20px;">
+
+		<h1 style="background-color: red; color: white; margin-top: 70px; margin-left: 10px; margin-right: 10px; padding-left: 20px; line-height: 50px;">
+			Italy-Florence</h1>
+
+        <table border="1px solid black">
+            <tr>
+              <th>Name</th>
+              <th>Days</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Italy-Florence</td>
+              <td></td>
+              <td>4050</td>
+            </tr>
+          </table>
+
+          <p style="margin-top: 40px; font-size: 20px; font-weight: bold;">Average Price by the Agency: 4050.0000</p>
+    
+          <h1 style="background-color: red; color: white; margin-top: 70px; margin-left: 10px; margin-right: 10px; padding-left: 20px; line-height: 50px;">
+            Reviews</h1>
+            
+            <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user1"></td>
+                  <td id="message1"></td>
+                  <td id="rating1"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user2"></td>
+                  <td id="message2"></td>
+                  <td id="rating2"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user3"></td>
+                  <td id="message3"></td>
+                  <td id="rating3"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user4"></td>
+                  <td id="message4"></td>
+                  <td id="rating4"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user5"></td>
+                  <td id="message5"></td>
+                  <td id="rating5"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user6"></td>
+                  <td id="message6"></td>
+                  <td id="rating6"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user7"></td>
+                  <td id="message7"></td>
+                  <td id="rating7"></td>
+                </tr>
+              </table>
+              <table border="1px solid black">
+                <tr>
+                  <th>User</th>
+                  <th>Message</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td id="user8"></td>
+                  <td id="message8"></td>
+                  <td id="rating8"></td>
+                </tr>
+              </table>
+
+
+              <!--Using Embedded Javascript-->
+              <script>
+                var place_name=["Sacha","Amazing and joyful","4"];
+          
+                for(var i=0;i<8;i++)
+                {
+                  
+                  document.getElementById("user"+(i+1)).innerHTML = place_name[0];
+                  document.getElementById("message"+(i+1)).innerHTML = place_name[1];
+                  document.getElementById("rating"+(i+1)).innerHTML = place_name[2];
+                  
+                }
+          
+              </script>
+
+              <br>
+
+  <p style="margin-top: 40px; font-size: 15px; font-style: italic; text-align: right;"><a href="C:\xampp\htdocs\Assignment 4\Review-page.html">Leave a review</a></p>            
+
+
+	</div>
+
+
+	</body>
+</html>
